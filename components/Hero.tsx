@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
 						href="https://beacons.ai/house190"
 						target="_blank"
 						rel="noreferrer"
-						className="w-full md:w-auto mb-5"
+						className="w-full md:w-auto mb-5 md:mb-0"
 					>
 						<Button
 							fullWidth
