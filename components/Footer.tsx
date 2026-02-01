@@ -12,7 +12,8 @@ export const Footer: React.FC = () => {
 						<span className="text-brand-yellow">190</span>
 					</h2>
 					<p className="text-gray-600 text-xs uppercase tracking-widest mt-2">
-						Todos os direitos reservados © {new Date().getFullYear()}
+						Todos os direitos reservados ©{" "}
+						{new Date().getFullYear()}
 					</p>
 				</div>
 
@@ -20,12 +21,14 @@ export const Footer: React.FC = () => {
 				<div className="flex gap-6">
 					<a
 						href="https://www.instagram.com/houseburger190/"
+						target="_blank"
 						className="text-gray-400 hover:text-white hover:scale-110 transition-all"
 					>
 						<Instagram size={24} />
 					</a>
 					<a
 						href="https://www.facebook.com/houseburgergoumet/?locale=pt_BR"
+						target="_blank"
 						className="text-gray-400 hover:text-white hover:scale-110 transition-all"
 					>
 						<Facebook size={24} />
