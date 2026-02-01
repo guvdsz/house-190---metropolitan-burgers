@@ -179,10 +179,6 @@ export const Locations: React.FC = () => {
 					{/* MAP CONTAINER */}
 					{/* Mobile: Fixed height h-[450px] to cover more screen. Desktop: flexible height */}
 					<div className="relative bg-black border border-white/10 rounded-sm overflow-hidden group h-[450px] lg:h-auto lg:flex-grow shadow-2xl">
-						{/* Industrial UI Overlays */}
-						<div className="absolute top-4 left-4 z-10 bg-black/80 backdrop-blur text-white text-[10px] md:text-xs font-display uppercase tracking-widest px-3 py-1 border border-brand-yellow/30 shadow-lg">
-							Sinal GPS: {activeCity.city}
-						</div>
 
 						<div className="absolute top-4 right-4 z-10 lg:hidden">
 							<a
