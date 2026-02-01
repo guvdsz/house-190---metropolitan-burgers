@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<link rel="icon" type="image/png" href="/logo.jpg" />
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>House 190 | Hamburgueria Urbana</title>
+		<meta
+			name="description"
+			content="O sabor da vida noturna urbana. House 190 - Metropolitan Industrial Burgers."
+		/>
+
+		<!-- SEO Essentials -->
+		<meta
+			name="keywords"
+			content="hamburguer, artesanal, delivery, restaurante, House 190, comida urbana, burger, São Paulo"
+		/>
+		<meta name="author" content="House 190 Hamburgueria" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="House 190 | Hamburgueria Urbana" />
+		<meta
+			property="og:description"
+			content="O sabor da vida noturna urbana. Hamburguer artesanal, ingredientes frescos e técnica precisa."
+		/>
+		<meta property="og:image" content="/foto-1.jpg" />
+		<meta property="og:url" content="https://seusite.com.br" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="/foto-1.jpg" />
+		<meta
+			name="twitter:title"
+			content="House 190 | Hamburgueria Urbana"
+		/>
+		<meta
+			name="twitter:description"
+			content="O sabor da vida noturna urbana. Hamburguer artesanal, ingredientes frescos e técnica precisa."
+		/>
+		<meta name="twitter:image" content="/logo.jpg" />
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Google Fonts: 
+         Yellowtail: Script font for 'House' logo
+         Oswald: Industrial headings
+         Montserrat: Modern body text 
+    -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Oswald:wght@300;500;700&family=Yellowtail&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							brand: {
+								yellow: "#FFC800", // Matches the flyer accent
+								red: "#D62828", // For the stars
+								dark: "#0A0A0A", // Deep charcoal/black
+								gray: "#1A1A1A", // Lighter black
+								steel: "#2D2D2D", // Metal texture color
+							},
+						},
+						fontFamily: {
+							sans: ["Montserrat", "sans-serif"],
+							display: ["Oswald", "sans-serif"],
+							script: ["Yellowtail", "cursive"],
+						},
+						backgroundImage: {
+							noise: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+						},
+					},
+				},
+			};
+		</script>
+		<style>
+			html {
+				scroll-behavior: smooth;
+				scroll-padding-top: 100px; /* Accounts for fixed navbar height */
+			}
+			body {
+				background-color: #050505;
+				color: #e5e5e5;
+			}
+			.industrial-text-shadow {
+				text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+			}
+			.neon-glow {
+				box-shadow: 0 0 10px rgba(255, 200, 0, 0.1);
+			}
+			/* Custom Scrollbar */
+			::-webkit-scrollbar {
+				width: 8px;
+			}
+			::-webkit-scrollbar-track {
+				background: #0a0a0a;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #333;
+				border-radius: 0px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background: #ffc800;
+			}
+		</style>
+		<script type="importmap">
+			{
+				"imports": {
+					"react": "https://esm.sh/react@^19.2.4",
+					"react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+					"react/": "https://esm.sh/react@^19.2.4/",
+					"lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="/index.css" />
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/index.tsx"></script>
+	</body>
+</html>
